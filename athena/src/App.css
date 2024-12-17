@@ -1,0 +1,194 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #212121, #1B1B1B);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3.33vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.shape {
+  background-color: #262626;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* Drop shadow */
+}
+
+.left-shape {
+  width: 20.47vw; /* 393px convertido */
+  height: 82.22vh; /* 888px convertido */
+  margin-right: 1.04vw; /* Espaçamento de 20px convertido */
+}
+
+.right-shape {
+  width: 70.99vw; /* 1363px convertido */
+  height: 82.22vh; /* 888px convertido */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.right-shape-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Definindo a altura */
+}
+
+.left-shape-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Definindo a altura */
+}
+
+.atena-image {
+  height: 3.98vh; /* Ocupará toda a altura do container */
+  width: 8.54vw;
+  align-self: flex-start;
+  padding-top: 3.33vh;
+  filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 1)); /* Adicionando drop-shadow */
+}
+
+.no-data-message{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Semibold */
+  font-size: 14px; /* Tamanho da fonte de 14px */
+  color: #FFFFFF; /* Cor do texto branco */}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity 1s ease-out; /* Transição suave para o fade out */
+}
+
+.notification.fade-out {
+  opacity: 0; /* Esconde a notificação gradualmente */
+}
+
+.notification .close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  align-self: flex-end; /* Garante que o X fique à direita */
+}
+
+.progress-bar {
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 100%;
+  transition: width 0.5s linear;
+}
+
+.scrollable-container {
+  max-height: 75vh; /* Ajuste conforme necessário para ocupar mais espaço */
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #262626; /* Cor de fundo para a área scrollável */
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 500px; /* Aumente a altura do gráfico */
+  margin-bottom: 40px; /* Adicione espaço entre o gráfico e a tabela de métricas */
+}
+
+.metrics-table {
+  margin-top: 10vh;
+  color: white;
+}
+
+.metrics-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.metrics-table th, .metrics-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.metrics-table th {
+  background-color: #333;
+  color: white;
+}
+
+.metrics-table td {
+  background-color: #444;
+}
+
+.download-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

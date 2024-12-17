@@ -1,0 +1,34 @@
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; /* Centraliza os elementos dentro do contêiner */
+}
+
+.dropdown-label {
+    font-size: 1.1vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #A4A4A4;
+    margin-bottom: 6px; /* Espaço de 6px abaixo do texto */
+    text-align: left; /* Alinhamento do rótulo à esquerda */
+    width: 85%; /* Garante que o rótulo ocupe 100% da largura */
+}
+
+.custom-dropdown {
+    border-radius: 8px;
+    border: 1px solid #FFFFFF; /* Ajustei para 1px para uma borda mais visível */
+    background: none;
+    padding: 10px;
+    font-size: 0.9vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #A4A4A4;
+    outline: none;
+    width: 85%;
+    height: 5.09vh;
+}
+
+.custom-dropdown option {
+    color: #000000; /* Cor das opções */
+}

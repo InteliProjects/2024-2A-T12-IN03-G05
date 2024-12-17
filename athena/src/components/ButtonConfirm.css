@@ -1,0 +1,52 @@
+/* Contêiner que envolve o botão */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Para garantir que o contêiner ocupe toda a largura disponível */
+}
+
+/* Estilos do botão */
+.confirm-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    height: 4.63vh; /* Altura de 4.63vh */
+    background-color: #4F78FF; /* Cor de fundo azul */
+    padding: 0 20px; /* Padding horizontal para espaçamento */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animação suave para hover */
+    width: 85%; /* Largura do botão */
+    margin-top: 3.33vh; /* Espaço superior externo */
+}
+
+/* Efeito ao passar o mouse */
+.confirm-button:hover {
+    background-color: rgba(79, 120, 255, 0.8); /* Efeito de hover */
+}
+
+/* Estilo do texto do botão */
+.button-text-confirm {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: 0.9vw; /* Tamanho da fonte de 14px */
+    color: #FFFFFF; /* Cor do texto branco */
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 1)); /* Adicionando drop-shadow */
+}
+
+/* Estilos do spinner de loading */
+.loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #ffffff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

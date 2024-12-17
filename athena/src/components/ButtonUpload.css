@@ -1,0 +1,44 @@
+/* Contêiner que envolve o botão */
+.button-container-upload {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente, se necessário */
+    width: 100%; /* Para garantir que o contêiner ocupe toda a largura disponível */
+}
+
+/* Estilos do botão */
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.3px solid #FFFFFF; /* Stroke de 0.3px branco */
+    border-radius: 8px; /* Você pode ajustar conforme o design desejado */
+    height: 7.41vh; /* Altura de 7.41vh */
+    background-color: transparent; /* Ou qualquer cor de fundo desejada */
+    padding: 0 20px; /* Um padding horizontal para espaçamento */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animação suave para hover */
+    width: 72%; /* Você pode ajustar conforme o design desejado */
+    margin-top: 3.33vh;
+}
+
+.custom-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efeito de hover */
+}
+
+.button-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: 0.85vw; /* Tamanho da fonte de 16px */
+    color: #FFFFFF; /* Cor do texto branco */
+    margin-right: 10px; /* Espaçamento entre o texto e o ícone */
+}
+
+.button-icon {
+    width: 16px; /* Tamanho do ícone, ajuste conforme necessário */
+    height: 16px;
+}
+
+.custom-button.uploaded {
+    background-color: #4CAF50; /* Cor verde após upload */
+  }
